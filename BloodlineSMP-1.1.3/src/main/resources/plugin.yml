@@ -1,0 +1,21 @@
+name: BloodlineSMP
+version: 1.1.3
+main: com.notdev.bloodline.BloodlineSMP
+api-version: '1.21'
+author: Notdev
+description: A lightweight Bloodline system for Paper SMP servers
+softdepend:
+  - PlaceholderAPI
+commands:
+  bloodline:
+    description: View and manage your Bloodline
+    usage: /bloodline [info|list|help|ability|set|reset|reroll|give|givesigil|mayon|particles|givecoinall|reload]
+    aliases:
+      - bl
+permissions:
+  bloodline.use:
+    description: Allows players to use Bloodline commands and abilities
+    default: true
+  bloodline.admin:
+    description: Allows administration of Bloodlines
+    default: op

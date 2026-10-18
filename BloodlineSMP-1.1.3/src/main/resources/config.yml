@@ -1,0 +1,99 @@
+settings:
+  auto-assign: true
+  assignment-mode: timer
+  assignment-delay: 60
+  awakening-bar: true
+  reveal-animation: true
+  auto-save: true
+debug: false
+
+abilities:
+  enabled: true
+  command:
+    enabled: true
+    require-sigil: false
+  cooldown-multiplier: 1.0
+visuals:
+  particles: true
+  sounds: true
+  action-bar: true
+recipes:
+  sigil:
+    enabled: true
+    shape:
+      - "ABA"
+      - "CDC"
+      - "AEA"
+    ingredients:
+      A: AMETHYST_SHARD
+      B: DIAMOND
+      C: GOLD_INGOT
+      D: STICK
+      E: DIAMOND
+  coin:
+    enabled: false
+    shape:
+      - "ABA"
+      - "BCB"
+      - "ABA"
+    ingredients:
+      A: GOLD_NUGGET
+      B: AMETHYST_SHARD
+      C: ECHO_SHARD
+  coin:
+    enabled: false
+    shape:
+      - "ABA"
+      - "BCB"
+      - "ABA"
+    ingredients:
+      A: GOLD_NUGGET
+      B: AMETHYST_SHARD
+      C: ECHO_SHARD
+messages:
+  prefix: "<gray>[<gold>Bloodline<gray>] "
+  assigned: "<green>Your Bloodline has been awakened."
+  already-assigned: "<yellow>You already have a Bloodline."
+  no-ability: "<red>Your Bloodline does not have an ability."
+  ability-disabled: "<red>Bloodline abilities are currently disabled."
+  cooldown: "<red>Your ability is on cooldown for <white>{time}s<red>."
+  admin-only: "<red>You do not have permission to do that."
+
+# Mayon is reserved and can only be assigned by an administrator with /bl set <player> mayon.
+mayon:
+  power-level: absurd # balanced, strong, ultra, absurd
+  buffs:
+    movement-speed: 1.15
+    jump-strength: 1.15
+    max-health-bonus: 80.0
+    attack-damage-bonus: 40.0
+
+silverine:
+  permanent-particles:
+    enabled: true
+    period-ticks: 5
+    intensity: ultra # low, medium, high, ultra
+    max-per-holder-per-pulse: 18
+    max-total-per-pulse: 160
+    view-distance: 48
+  storm:
+    duration-seconds: 5
+    radius: 6
+    cooldown-seconds: 30
+    max-particles-per-pulse: 40
+    storm-damage: false
+    damage: 1.0
+    max-targets: 6
+  aura:
+    period-ticks: 6
+    radius: 10
+    max-lift: 5.0
+    max-border-particles: 24
+    exempt-creative: true
+    exempt-players: []
+    cancel-victim-teleports: true
+    victims-invulnerable: false
+
+givecoinall:
+  include-spectators: false
+  max-amount: 16
